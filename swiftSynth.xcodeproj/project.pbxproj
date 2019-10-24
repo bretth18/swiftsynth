@@ -16,6 +16,9 @@
 		8BCF84B623621CCF00763042 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BCF84B423621CCF00763042 /* LaunchScreen.storyboard */; };
 		8BCF84C123621CCF00763042 /* swiftSynthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCF84C023621CCF00763042 /* swiftSynthTests.swift */; };
 		8BCF84CC23621CCF00763042 /* swiftSynthUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCF84CB23621CCF00763042 /* swiftSynthUITests.swift */; };
+		8BCF84DA23621D9100763042 /* SynthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCF84D923621D9100763042 /* SynthViewController.swift */; };
+		8BCF84DC23621E2600763042 /* Synth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCF84DB23621E2600763042 /* Synth.swift */; };
+		8BCF84DE2362233100763042 /* Oscillator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCF84DD2362233100763042 /* Oscillator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		8BCF84C723621CCF00763042 /* swiftSynthUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swiftSynthUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BCF84CB23621CCF00763042 /* swiftSynthUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftSynthUITests.swift; sourceTree = "<group>"; };
 		8BCF84CD23621CCF00763042 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BCF84D923621D9100763042 /* SynthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynthViewController.swift; sourceTree = "<group>"; };
+		8BCF84DB23621E2600763042 /* Synth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Synth.swift; sourceTree = "<group>"; };
+		8BCF84DD2362233100763042 /* Oscillator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Oscillator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,9 @@
 		8BCF84A523621CCD00763042 /* swiftSynth */ = {
 			isa = PBXGroup;
 			children = (
+				8BCF84E1236234CB00763042 /* Extensions */,
+				8BCF84E0236234C600763042 /* Controllers */,
+				8BCF84DF236234BC00763042 /* Audio */,
 				8BCF84A623621CCD00763042 /* AppDelegate.swift */,
 				8BCF84A823621CCD00763042 /* SceneDelegate.swift */,
 				8BCF84AD23621CCD00763042 /* ContentView.swift */,
@@ -137,6 +146,30 @@
 				8BCF84CD23621CCF00763042 /* Info.plist */,
 			);
 			path = swiftSynthUITests;
+			sourceTree = "<group>";
+		};
+		8BCF84DF236234BC00763042 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				8BCF84DB23621E2600763042 /* Synth.swift */,
+				8BCF84DD2362233100763042 /* Oscillator.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		8BCF84E0236234C600763042 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8BCF84D923621D9100763042 /* SynthViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8BCF84E1236234CB00763042 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +303,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BCF84DC23621E2600763042 /* Synth.swift in Sources */,
+				8BCF84DE2362233100763042 /* Oscillator.swift in Sources */,
+				8BCF84DA23621D9100763042 /* SynthViewController.swift in Sources */,
 				8BCF84AC23621CCD00763042 /* swiftSynth.xcdatamodeld in Sources */,
 				8BCF84A723621CCD00763042 /* AppDelegate.swift in Sources */,
 				8BCF84AE23621CCD00763042 /* ContentView.swift in Sources */,
